@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiAddress:'https://angular533.firebaseio.com'
 };

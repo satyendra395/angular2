@@ -1,0 +1,9 @@
+<h2>Service 2</h2>
+<div>
+  City : <input type="text" [(ngModel)]="city" /><button (click)="AddCity()">Add</button>
+</div>
+<ul>
+  <li *ngFor="let item of cityList">
+    {{item}}
+  </li>
+</ul>

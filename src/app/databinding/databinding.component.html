@@ -1,0 +1,13 @@
+<h2>Data Binding</h2>
+
+<h3>Interpolation : {{company}}, {{name}}</h3>
+
+<h3>Property Binding</h3>
+<a [href]="url" target="_blank">{{company}}</a>
+<input type="text" [value]="name" />
+
+<h3>Two Way Data Binding</h3>
+<input type="text" [(ngModel)]="name" />
+
+<h3>Event Handling</h3>
+<button type="button" (click)="Greet()">Greet!</button>

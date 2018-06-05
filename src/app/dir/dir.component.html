@@ -1,0 +1,35 @@
+<h2 Hightlight>Directive</h2>
+
+<input type="number" [(ngModel)]="num">
+
+<h3 class="Hightlight">ngIf</h3>
+
+<div *ngIf="num!=undefined && num%2==0">
+  Even Number
+</div>
+<div *ngIf="num!=undefined && num%2>0">
+  Odd Number
+</div>
+
+<h3>ngIf..else</h3>
+<div *ngIf="num!=undefined && num%2==0 then divif;else divelse"></div>
+
+<ng-template #divif>Even Number</ng-template>
+<ng-template #divelse>Odd Number</ng-template>
+
+<h3>Switch</h3>
+<input type="text" [(ngModel)]="alphabet">
+
+<div [ngSwitch]="alphabet">
+  <div *ngSwitchCase="'a'">Vowel</div>
+  <div *ngSwitchCase="'e'">Vowel</div>
+  <div *ngSwitchCase="'i'">Vowel</div>
+  <div *ngSwitchCase="'o'">Vowel</div>
+  <div *ngSwitchCase="'u'">Vowel</div>
+  <div *ngSwitchDefault>Not Vowel</div>
+</div>
+
+<h3>ngFor</h3>
+<ul>
+  <li *ngFor="let item of colors">{{item}}</li>
+</ul>
